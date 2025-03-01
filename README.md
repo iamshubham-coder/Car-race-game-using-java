@@ -1,15 +1,15 @@
 # Car-race-game-using-java
-Single-Threaded Design:
+# Single-Threaded Design:
 
-The game currently runs on a single thread, which handles both the game logic (e.g., collision detection, score updates, and obstacle movement) and rendering (e.g., drawing graphics on the screen).
+# The game currently runs on a single thread, which handles both the game logic (e.g., collision detection, score updates, and obstacle movement) and rendering (e.g., drawing graphics on the screen).
 
-The paint() method and the repaint() calls are executed on the Event Dispatch Thread (EDT), which is the main thread responsible for handling GUI updates in Java Swing.
+# The paint() method and the repaint() calls are executed on the Event Dispatch Thread (EDT), which is the main thread responsible for handling GUI updates in Java Swing.
 
-Timer for Game Loop:
+# Timer for Game Loop:
 
-The game uses a Timer (from javax.swing.Timer) to control the game loop. This timer runs on the EDT, meaning all game logic and rendering are tied to this single thread.
+# The game uses a Timer (from javax.swing.Timer) to control the game loop. This timer runs on the EDT, meaning all game logic and rendering are tied to this single thread.
 
-While this approach works for simple games, it can lead to performance issues if the game logic becomes too complex or if rendering takes too long.
+# While this approach works for simple games, it can lead to performance issues if the game logic becomes too complex or if rendering takes too long.
 
 
 # key features
